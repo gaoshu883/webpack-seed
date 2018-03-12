@@ -1,7 +1,7 @@
 {
-  "name": "webpack-seed",
-  "version": "2.0.0",
-  "description": "This is a seed for web application built by webpack",
+  "name": "{{projectName}}",
+  "version": "{{projectVersion}}",
+  "description": "{{projectDescription}}",
   "scripts": {
     "build": "./node_modules/.bin/webpack --progress --colors --bail",
     "dev": "./node_modules/.bin/webpack --progress --colors --config ./webpack.dev.config.js",
@@ -11,12 +11,8 @@
     "analyse": "webpack --json > ./build/stats.json && webpack-bundle-analyzer --port 8989 ./build/stats.json",
     "analyze": "npm run analyse"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:Array-Huang/webpack-seed.git"
-  },
-  "author": "Array Huang",
-  "license": "MIT",
+  "author": "{{projectAuthor}}",
+  "private": true,
   "devDependencies": {
     "autoprefixer": "^6.4.0",
     "babel-core": "^6.25.0",
